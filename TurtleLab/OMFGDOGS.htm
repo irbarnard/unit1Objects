@@ -1,0 +1,98 @@
+
+<!-- saved from url=(0024)http://www.omfgdogs.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>OMFGDOGS</title>
+<link rel="stylesheet" type="text/css" href="./OMFGDOGS_files/omfgdogs.css">
+<link href="http://www.omfgdogs.com/js/toastr/toastr.css" rel="stylesheet">
+<script id="facebook-jssdk" src="./OMFGDOGS_files/all.js"></script><script src="./OMFGDOGS_files/jquery.min.js"></script>
+<script src="./OMFGDOGS_files/toastr.js"></script>
+<script src="./OMFGDOGS_files/wat.js"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script src="./OMFGDOGS_files/soundmanager2-nodebug.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+soundManager.url = 'swf/';
+soundManager.flashVersion = 9; 
+soundManager.useFlashBlock = false; 
+soundManager.onready(function() {
+  soundManager.createSound({
+    id: 'omfgdogs',
+    url: 'omfgdogs.mp3',
+    autoLoad: true,
+    autoPlay: true,
+    loops: 999999,
+    onload: function() {
+    },
+    volume: 75
+  });
+});
+//]]>
+</script> 
+<script type="text/javascript">
+    toastr.options = {
+      "closeButton": true,
+      "debug": false,
+      "positionClass": "toast-bottom-right",
+      "showDuration": "1000",
+      "hideDuration": "1000",
+      "timeOut": "100000",
+      "extendedTimeOut": "100000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+   }
+</script>
+<div id="footer">
+    <div id="footer-left">
+        [ <a href="http://escism.net/" target="_blank">escism.net</a> ] [ <a href="http://twitter.com/eataudio" target="_blank">@eataudio</a> ]
+    </div>
+    <div id="ads">
+    </div>
+    <div id="footer-right">
+        <div id="helptext">
+            [ help keep the dogs running! ]
+        </div>
+        <form action="https://www.paypal.com/cgi-bin/webscr" target="_blank" method="post">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="MRPA6SV4MEPPC">
+            <input type="image" src="./OMFGDOGS_files/pp.png" width="25px" name="submit" alt="PayPal — The safer, easier way to pay online.">
+            <img alt="" border="0" src="./OMFGDOGS_files/pixel.gif" height="1">
+         </form>
+        <div id="btc">
+            <a href="http://www.omfgdogs.com/#"><img src="./OMFGDOGS_files/btc.png" width="25px"></a>
+        </div>
+		<div id="doge">
+            <a href="http://www.omfgdogs.com/#"><img src="./OMFGDOGS_files/doge.png" width="25px"></a>
+        </div>
+        <div id="flattr">
+            <iframe src="./OMFGDOGS_files/saved_resource.htm" title="Flattr" height="20" width="110" style="border-width: 0px;"></iframe><script id="fbgcm23">(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=eataudio&button=compact&url=http%3A%2F%2Fomfgdogs.com';f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbgcm23');</script>
+        </div>
+        <div class="fb-like" colorscheme="dark" data-href="http://omfgdogs.com" data-send="false" data-layout="button_count" data-width="90" data-height="23" data-show-faces="false" data-font="verdana" style="padding-top: 3px;"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#btc').click(function() {
+        toastr.info('Donate Bitcoin!<br /><a href="bitcoin:1DMY5BXGc3WpvA12bDUy2iTEDK13zDsMDG">1DMY5BXGc3WpvA12bDUy2iTEDK13zDsMDG</a>')
+    });
+
+    toastr.options.onHidden = function() { }
+</script>
+<script type="text/javascript">
+    $('#doge').click(function() {
+        toastr.info('<font face="Comic Sans MS">DARimGih6j4zD2p6LdZjvuduTAC2esB1dd</font>', '<font face="Comic Sans MS">Donate <a href="http://dogecoin.com/" target="_blank">DOGE</a>!</font>')
+    });
+    toastr.options.onHidden = function() { }
+</script>
+
+
+<div id="sm2-container" class="movieContainer " style="z-index: 10000; position: absolute; width: 6px; height: 6px; top: -9999px; left: -9999px;"><embed name="sm2movie" id="sm2movie" src="swf/soundmanager2_flash9.swf" width="auto" height="auto" quality="high" allowscriptaccess="always" bgcolor="#ffffff" pluginspage="www.macromedia.com/go/getflashplayer" title="JS/Flash audio component (SoundManager 2)" type="application/x-shockwave-flash" haspriority="true"></div></body></html>
